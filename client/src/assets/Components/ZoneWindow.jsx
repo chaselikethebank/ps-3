@@ -96,7 +96,7 @@ const ZoneWindow = ({ selectedZone, zoneData, userData, onEditZoneClick }) => {
   const getRunTime = () => {
     let monthET = userET;
     let cropET = (monthET * 0.65).toFixed(2);
-    let weekET = (cropET / 4.2).toFixed(2);
+    let weekET = (cropET / 4.3).toFixed(2);
 
     if (selectedZone) {
       let sun = (selectedZone.sun * 0.05).toFixed(0);
@@ -143,7 +143,7 @@ const ZoneWindow = ({ selectedZone, zoneData, userData, onEditZoneClick }) => {
 
   return (
     <div className="main">
-      <div className="grid-card  ">
+      <div className="grid-card">
         <div className="zone-num data-container">
           <div className="data-blocks space-between">
             <div>Zone {selectedZone.num} </div>
